@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class QuizzComponent {
 
+  title = "";
+  questions: any;
+  questionSelected: any;
+  answers: string[] = [];
+  answerSelected = "";
+  questionIndex = 0;
+  questionMaxIndex = 0;
+  finished = false;
+
 }
