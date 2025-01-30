@@ -3,14 +3,22 @@
         <img src="https://www.pngall.com/wp-content/uploads/15/Buzzfeed-Logo-PNG-Image.png" alt="">
         <h3>{{title}}</h3>
     </div>
-    <div class="quizz-questions">
+    <div *ngIf="!finished" class="quizz-questions">
         <h3>{{questionSelected.question}}</h3>
     </div>
-    <div class="quizz-options">
-        <button class="btn-option">optionname</button>
+    <div *ngIf="!finished" class="quizz-options">
+        <button 
+            class="btn-option" 
+            (click)="playerChoose(option.alias)"
+            *ngFor="let option of questionSelected.options"
+        >
+            {{option.name}}
+        </button>
     </div>
     <div *ngIf="finished" class="quizz-results">
         <h1>O seu resultado é:</h1>
-        <p>Resposta Selecionada</p>
+        <p>{{answerSelected}}</p>
+        <br>
+        <a (click)="reiniciar()"><i>Reiniciar</i></a>
     </div>
 </div>

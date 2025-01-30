@@ -78,3 +78,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.quizz-results > a{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quizz-results > a:hover{
+    font-weight: 600;
+}

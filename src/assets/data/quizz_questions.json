@@ -46,10 +46,19 @@
           {"id": 1, "name":"O Terrivel", "alias":"A"},
           {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
         ]
+      },
+      {
+        "id":6,
+        "question": "O que você faria ao derrotar um inimigo ?",
+        "options":[
+          {"id": 1, "name":"Mataria ele", "alias":"A"},
+          {"id": 2, "name":"O entregaria a polícia", "alias":"B"}
+        ]
       }
     ],
     "results":{
       "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
+      "B": "Você muito provavelmente seria um super Herói!",
+      "C": "Você muito provavelmente seria um anti Herói!"
     }
   }
